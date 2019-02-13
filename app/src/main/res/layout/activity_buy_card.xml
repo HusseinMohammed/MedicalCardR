@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hyper.design.medicalcard.Activities.BuyCard">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:id="@+id/toolbar"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+
+        <ProgressBar
+            android:id="@+id/pbBuyCard"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/buy_card_form"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.hyper.design.medicalcard.Activities.BuyCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_upload_profile"
+                    android:layout_width="118dp"
+                    android:layout_height="109dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/user_profile" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_upload_id"
+                    android:layout_width="118dp"
+                    android:layout_height="109dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/badge"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_name_buy_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/buy_card_name"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/colorGreen"/>
+
+            <EditText
+                android:id="@+id/et_email_buy_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="@string/buy_card_email_address"
+                android:backgroundTint="@color/colorGreen"/>
+
+            <LinearLayout
+                android:id="@+id/ll_spinner_specialist_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spin_all_cities"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:pointerIcon="arrow"
+                    android:spinnerMode="dropdown"
+                    android:backgroundTint="@color/colorGreen" />
+
+                <Spinner
+                    android:id="@+id/spin_all_areas"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/spin_all_cities"
+                    android:pointerIcon="arrow"
+                    android:spinnerMode="dropdown"
+                    android:backgroundTint="@color/colorGreen" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_phone_buy_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:hint="@string/buy_card_phone"
+                android:backgroundTint="@color/colorGreen"/>
+
+            <EditText
+                android:id="@+id/et_address_buy_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:inputType="textPostalAddress"
+                android:hint="@string/buy_card_address"
+                android:backgroundTint="@color/colorGreen"/>
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:inputType="textAutoComplete"
+                android:hint="@string/buy_card_comment"
+                android:backgroundTint="@color/colorGreen"/>
+
+            <TextView
+                android:id="@+id/typeOfMembership"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/typeOfMemberShip"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_type_membership"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_individual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:checked="true"
+                    android:text="@string/single"
+                    android:textColorHint="@color/colorRed"
+                    android:theme="@style/MyRadioButton"/>
+
+                <RadioButton
+                    android:id="@+id/radio_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="@string/family"
+                    android:textColorHint="@color/colorRed"
+                    android:theme="@style/MyRadioButton"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_buy_card"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/buy_card_button"
+                android:textColorHint="@color/colorWhite"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:backgroundTint="@color/colorGreen"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_specialist_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:drawableLeft="@drawable/stethoscope"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="monospace"
+            android:text="@string/doctor_specialist"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_discount_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/discount"
+            android:drawablePadding="5dp"
+            android:fontFamily="monospace"
+            android:text="@string/doctor_fees_discount"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_location_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/placeholder"
+            android:drawablePadding="5dp"
+            android:fontFamily="monospace"
+            android:text="@string/doctor_location"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_doctor_phone_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/phonecall"
+            android:drawablePadding="5dp"
+            android:text="@string/doctor_phone"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_doctor_schedule_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/phonecall"
+            android:drawablePadding="5dp"
+            android:text="@string/doctor_phone"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_doctor_service_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/phonecall"
+            android:drawablePadding="5dp"
+            android:text="@string/doctor_phone"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

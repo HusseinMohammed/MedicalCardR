@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_doctor_profile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:minHeight="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:id="@+id/toolbar"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/main_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/doctor_profile_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_doctor_profile_image_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_margin="@dimen/nav_header_vertical_spacing"
+                    android:src="@drawable/doctor_image"
+                    app:civ_border_color="@color/colorGreen"
+                    app:civ_border_width="2dp" />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="@integer/rate"
+                    android:stepSize="0.1"
+                    android:theme="@style/RatingBar"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/doctor_name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <!--android:drawableLeft="@drawable/doctor_one"-->
+
+                <TextView
+                    android:id="@+id/tv_doctor_category_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/doctor_rating_bar_margin_top"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/category"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!--android:drawableLeft="@drawable/category"-->
+
+
+                <!--<TextView
+                    android:id="@+id/tv_doctor_reviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/doctor_rating_bar_margin_top"
+                    android:fontFamily="monospace"
+                    android:text="@string/reviews"
+                    android:textSize="15sp"
+                    android:drawableLeft="@drawable/star"
+                    android:drawablePadding="5dp"/>-->
+
+
+                <!--<TextView
+                    android:id="@+id/tvDiscount"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/doctor_rating_bar_margin_top"
+                    android:fontFamily="monospace"
+                    android:paddingTop="2dp"
+                    android:text="@string/discount"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/percentage_two"
+                    android:drawablePadding="5dp"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_discount_percentage"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/doctor_rating_bar_margin_top"-->
+                <!--android:layout_marginTop="2.5dp"-->
+                <!--android:fontFamily="monospace"-->
+                <!--android:text="@string/discount_percentage"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textStyle="bold" />-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TabHost
+            android:id="@+id/th_profile_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="145dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorGreen"
+                    />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--<LinearLayout
+                        android:id="@+id/Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_doctor_profile_specialist1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:drawableLeft="@drawable/stethoscope"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="monospace"
+                            android:text="@string/doctor_specialist"
+                            android:textSize="15dp" />
+
+                        &lt;!&ndash;<TextView
+                                    android:id="@+id/tv_doctor_profile_fees"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="8dp"
+                                    android:drawableLeft="@drawable/dollarssymbol"
+                                    android:drawablePadding="10dp"
+                                    android:fontFamily="monospace"
+                                    android:text="@string/doctor_fees_discount"
+                                    android:textSize="15dp" />&ndash;&gt;
+
+
+                        <TextView
+                            android:id="@+id/tv_doctor_profile_location1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/placeholder"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="monospace"
+                            android:text="@string/doctor_location"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_doctor_profile_phone1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/phonecall"
+                            android:drawablePadding="10dp"
+                            android:text="@string/doctor_phone"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_doctor_profile_feedback1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/information"
+                            android:drawablePadding="10dp"
+                            android:text="@string/doctor_about"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="8dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_specialist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:drawableLeft="@drawable/stethoscope"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="8dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="monospace"
+                            android:text="@string/doctor_specialist"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:drawableLeft="@drawable/discount"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="monospace"
+                            android:text="@string/doctor_fees_discount"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:drawableLeft="@drawable/placeholder"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="monospace"
+                            android:text="@string/doctor_location"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_doctor_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/phonecall"
+                            android:drawablePadding="5dp"
+                            android:text="@string/doctor_phone"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_doctor_schedule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:drawableLeft="@drawable/clock"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="8dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="monospace"
+                            android:text="@string/doctor_schedule"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_doctor_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:drawableLeft="@drawable/information_doctor"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="monospace"
+                            android:text="@string/doctor_service"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Reviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/layout_add_view"
+                            layout="@layout/add_rate_review"
+                            android:visibility="gone">
+
+                        </include>
+
+                        <ListView
+                            android:id="@+id/lv_reviews"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </ListView>
+
+                        <ProgressBar
+                            android:id="@+id/pb_list_reviews"
+                            style="@style/progress_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="8dp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+    <!--<android.support.design.widget.TabLayout
+           android:id="@+id/th_profile_reviews"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <android.support.design.widget.TabItem
+               android:id="@+id/tabItem"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/profile" />
+
+           <android.support.design.widget.TabItem
+               android:id="@+id/tabItem2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/review" />
+
+
+       </android.support.design.widget.TabLayout>-->
+    <!--<FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        &lt;!&ndash;<android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">&ndash;&gt;
+
+            &lt;!&ndash;<include
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/toolbar_layout"/>&ndash;&gt;
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review" />
+
+        </android.support.design.widget.TabLayout>
+        </android.support.design.widget.AppBarLayout>&lt;!&ndash;
+        </android.support.design.widget.AppBarLayout>
+&ndash;&gt;
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </FrameLayout>-->

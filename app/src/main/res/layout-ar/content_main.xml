@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hyper.design.medicalcard.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ProgressBar
+        android:id="@+id/main_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/main_form"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.hyper.design.medicalcard.Activities.SuggestDoctor">
+
+    <!--<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+    </FrameLayout>-->
+    <!--<FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/doctor_image"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:layout_gravity="bottom|right"/>
+    </FrameLayout>-->
+
+    <ImageView
+        android:id="@+id/iv_medical_card_logo"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/medical_card_logo"
+        android:contentDescription="TODO"/>
+
+
+    <!--<Spinner
+        android:id="@+id/To_Units"
+        style="@style/spinner_style"
+        android:layout_width="341dp"
+        android:layout_height="33dp"
+        />-->
+
+    <!--
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"-->
+
+        <!--<TextView
+        android:id="@+id/tv_medical_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:text="Medical Card"
+        android:textColor="@color/colorGreen"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_medical_card_logo" />-->
+
+
+
+    <Spinner
+        android:id="@+id/spin_all_categories"
+        android:prompt="@string/categories"
+        android:layout_width="341dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/all_categories"
+        android:pointerIcon="arrow"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorGreen" />
+       <!-- app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_medical_card_logo"-->
+
+    <Spinner
+        android:id="@+id/spin_all_specialists"
+        android:prompt="@string/Specialists"
+        android:layout_width="341dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/all_specialists"
+        android:layout_below="@+id/spin_all_categories"
+        android:pointerIcon="arrow"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorGreen"
+        />
+       <!-- app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_all_categories" -->
+    <Spinner
+        android:id="@+id/spin_all_cities"
+        android:outlineProvider="paddedBounds"
+        android:prompt="@string/Cities"
+        android:layout_width="341dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/all_cities"
+        android:pointerIcon="arrow"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorGreen"
+        />
+
+        <!--app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_all_specialists"-->
+
+        <Spinner
+            android:id="@+id/spin_all_areas"
+            android:prompt="@string/Areas"
+            android:layout_width="341dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/spin_all_cities"
+            android:entries="@array/all_areas"
+            android:pointerIcon="arrow"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorGreen"
+            />
+
+       <!-- app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_all_cities"-->
+
+        <EditText
+            android:id="@+id/et_doctor_name"
+            android:layout_width="341dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/doctor_name_hint"
+            android:backgroundTint="@color/colorGreen"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            />
+        <!--android:textCursorDrawable="@null"
+            android:textColor="@color/colorGreen"-->
+
+        <!--app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_all_areas"-->
+
+        <Button
+            android:id="@+id/btn_search_for_doctor"
+            android:layout_width="341dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/search_for_doctor"
+            android:textColorHint="@color/colorWhite"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorGreen"/>
+
+        <!--<Button
+            android:id="@+id/button_suggest_doctor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorGreen"
+            android:text="Suggest" />-->
+
+        <!--app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_doctor_name"-->
+
+    <!--    android:onClick="btnSearchForDoctor"-->
+
+    </LinearLayout>
+
+</LinearLayout>

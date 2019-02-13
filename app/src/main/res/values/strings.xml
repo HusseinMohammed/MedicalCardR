@@ -1,0 +1,244 @@
+<resources>
+    <string name="checkNetwork">Please check network connection and try again</string>
+    <string name="successCheckNetwork">Success network connection</string>
+    <string name="app_name_name">Medical Card</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="categories">Choose a Category</string>
+    <string name="Specialists">Choose a Specialist</string>
+    <string name="Cities">Choose a Region</string>
+    <string name="Areas">Choose an Area</string>
+    <string name="doctor_name_hint">Doctor Name</string>
+    <string name="search_button_text">Search for Doctor</string>
+
+    <string name="search_nav">Search</string>
+    <string name="blog_nav">Blog</string>
+    <string name="setting_nav">Setting</string>
+    <string name="buy_card_nav">Buy Card</string>
+    <string name="suggest_doctor_nav">Suggest Doctor</string>
+    <string name="about_us_nav">About me</string>
+    <string name="sign_in_nav">Sign in</string>
+    <string name="sign_out_nav">Sign out</string>
+    <string name="share_nav">Share</string>
+    <string name="contact_us_nav">Contact us</string>
+
+    <string-array name="all_categories">
+        <!--<item>Choose a Category</item>-->
+        <!--<item>Hospital</item>
+        <item>Lab</item>
+        <item>Clinic</item>-->
+    </string-array>
+
+    <string-array name="all_specialists">
+        <!--<item>Choose a Specialist</item>-->
+        <!--
+        <item>Dentist</item>
+        <item>Heart</item>
+        <item>Lab</item>
+        <item>Clinic</item>-->
+    </string-array>
+
+    <string-array name="all_cities">
+        <!--<item>Choose a City</item>-->
+        <!-- <item>Cairo</item>
+        <item>Alexandria</item>
+        <item>Gizeh</item>
+        <item>Shubra El-Kheima</item>
+        <item>Port Said</item>-->
+
+    </string-array>
+
+    <string-array name="all_areas">
+        <!--<item>Choose an Area</item>-->
+        <!--<item>Abbassia</item>
+        <item>NCitySpinnerCity</item>
+        <item>New Cairo</item>
+        <item>Heliopolis</item>-->
+    </string-array>
+
+    <string name="doctor_name">Doctor Muhammad</string>
+    <string name="doctor_job">Professor of dermatology</string>
+    <string name="category">Category</string>
+    <string name="reviews">100 Reviews</string>
+
+    <string name="discount">Discount</string>
+    <integer name="rate">0</integer>
+
+    <string name="discount_percentage">50%</string>
+
+    <string name="doctor_specialist">Dentist specializedtic Dentistry</string>
+
+    <string name="doctor_location">NasrCity: 42 El Batrawy Street.</string>
+
+    <string name="doctor_fees_discount">Discount Fees: 50 EGP 100 EGP</string>
+
+    <string name="doctor_phone">Phone: 01028203313</string>
+
+    <string name="doctor_profile">Doctor Profile</string>
+
+    <string name="doctor_schedule">3:00-4:30</string>
+
+    <string name="doctor_service">service</string>
+
+    <string name="profile">Profile</string>
+    <string name="review">Reviews</string>
+
+    <string name="doctor_about">
+        Our Professional <!--dental team will provide you with the best treatment option using the highest technology
+        in a relaxed and friendly atmosphere. Specialists and Consultants-->
+    </string>
+
+    <string name="doctor_service1">Dental Surgery</string>
+
+    <string name="doctor_service2">Dental Whitening</string>
+
+    <string name="add_review">Add Review</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_recycler_view">Search For Doctor</string>
+    <string name="title_activity_doctor_profile">Doctor Profile</string>
+    <string name="title_activity_login_name">Sign in</string>
+    <string name="title_activity_register">Sign up</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_code">Code</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_phone">This phone is incorrect</string>
+    <string name="error_invalid_address">This address is incorrect</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_about_me">About Me</string>
+    <string name="title_activity_buy_card">Buy Card</string>
+    <string name="title_activity_suggest_doctor">Suggest Category</string>
+
+    <string name="about_us">About us</string>
+
+
+    <string name="about_us_data">We specialize in the treatment of heart diseases, physiotherapy and physiotherapy.
+    (Physiotherapist) - Physiotherapy (Physiotherapist) - Physiotherapy - Physiotherapy - Physiotherapy - Physiotherapy - Physiotherapy - Physiotherapy -
+    English English Artikel Metniversis Wyeth a Medical Medical Science and Informational Technology.
+    information about us</string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="todo">TODO</string>
+    <string name="search_for_doctor">Search For Doctor</string>
+
+    <string-array name="comments">
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+    </string-array>
+
+    <string-array name="account_name">
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+    </string-array>
+
+    <string-array name="travel_reasons">
+        <item>Dahab</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+    </string-array>
+    <string name="prompt">prompt</string>
+
+    <string name="fcm_pref">com.example.hyperdesignhussien.myawesomepushnotification.fcm_pref</string>
+    <string name="fcm_token">com.example.hyperdesignhussien.myawesomepushnotification.fcm_token</string>
+    <string name="token">token</string>
+
+    <string name="change_language">Change Language</string>
+    <string name="English">English</string>
+    <string name="Arabic">Arabic</string>
+
+    <string name="buy_card">Buy Card</string>
+    <string name="suggest">Suggest</string>
+    <string name="blog_name">Blog</string>
+    <string name="blog_details_title">Blog Details</string>
+    <string name="settings_name">Settings</string>
+
+    <string name="blog_title">Blog Title</string>
+    <string name="blog_written_by">Written By Muhammad</string>
+    <string name="blog_date">1/2/2018</string>
+    <string name="blog_details">Details of Blog</string>
+
+    <string name="register">Register</string>
+    <string name="register_username">Username</string>
+    <string name="register_email">Email</string>
+    <string name="register_password">Password</string>
+    <string name="register_code_number">Code Number</string>
+
+    <string name="buy_card_name">Name</string>
+    <string name="buy_card_email_address">Email Address</string>
+    <string name="buy_card_phone">Phone</string>
+    <string name="buy_card_address">Address</string>
+    <string name="buy_card_comment">Comment</string>
+    <string name="buy_card_button">Buy Card</string>
+
+    <string name="suggest_name">Name</string>
+    <string name="suggest_phone">Phone</string>
+    <string name="suggest_address">Address</string>
+
+    <string name="medical_card_account_name">Medical Card</string>
+    <string name="medical_card_account_email">info@medicalcard-eg.com</string>
+
+    <string name="contact_me_username">Username</string>
+    <string name="contact_me_email">Email Address</string>
+    <string name="contact_me_phone">Phone</string>
+    <string name="contact_me_title">Title of Message</string>
+    <string name="contact_me_message">Message</string>
+    <string name="contact_me_button">Contact me</string>
+
+    <string name="communicate">Communicate</string>
+
+    <string name="alert_message">Please Check Network Connection and try again</string>
+    <string name="exit_message">Exit</string>
+
+    <string name="ok_message">ok</string>
+    <string name="cancel_message">cancel</string>
+    <string name="close_message">Close</string>
+
+    <string name="category_required"> category is required</string>
+    <string name="single">Single</string>
+    <string name="family">Family</string>
+    <string name="typeOfMemberShip">Type Of Membership</string>
+
+</resources>
+
+    <!--if (spinCategories.getSelectedItem().equals(i)) {
+    sendCategoryId();
+    adapterSpinSpecialists = new ArrayAdapter<String>(getBaseContext(),
+android.R.layout.simple_spinner_item, spinnerArraySpecialists);
+spinSpecialists.setAdapter(adapterSpinSpecialists);
+} else {
+adapterSpinSpecialists = new ArrayAdapter<String>(getBaseContext(),
+    android.R.layout.simple_spinner_item, spinnerArraySpecialists);
+    spinSpecialists.setAdapter(adapterSpinSpecialists);
+    }-->

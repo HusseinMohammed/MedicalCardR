@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="checkNetwork">يرجى التحقق من اتصال الشبكة والمحاولة مرة أخرى</string>
+    <string name="successCheckNetwork">نجاح اتصال الشبكة</string>
+    <string name="app_name_name">البطاقة الطبية</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">الاعدادت</string>
+
+    <string name="categories">اختر الفئة</string>
+    <string name="Specialists">اختر التخصص</string>
+    <string name="Cities">اختر المدينة</string>
+    <string name="Areas">اختر المنطقة</string>
+    <string name="doctor_name_hint">اسم الطبيب</string>
+    <string name="search_button_text">بحث</string>
+
+    <string name="search_nav">بحث</string>
+    <string name="blog_nav">مدونة</string>
+    <string name="setting_nav">ضبط</string>
+    <string name="buy_card_nav">شراء بطاقة</string>
+    <string name="suggest_doctor_nav">اقتراح الطبيب</string>
+    <string name="about_us_nav">معلومات عنا</string>
+    <string name="sign_in_nav">تسجيل الدخول</string>
+    <string name="sign_out_nav">تسجيل خروج</string>
+    <string name="share_nav">مشاركة</string>
+    <string name="contact_us_nav">اتصل بنا</string>
+
+    <string-array name="all_categories">
+        <!--<item>Choose a Category</item>-->
+        <!--<item>Hospital</item>
+        <item>Lab</item>
+        <item>Clinic</item>-->
+    </string-array>
+
+    <string-array name="all_specialists">
+        <!--<item>Choose a Specialist</item>-->
+        <!--
+        <item>Dentist</item>
+        <item>Heart</item>
+        <item>Lab</item>
+        <item>Clinic</item>-->
+    </string-array>
+
+    <string-array name="all_cities">
+        <!--<item>Choose a City</item>-->
+        <!-- <item>Cairo</item>
+        <item>Alexandria</item>
+        <item>Gizeh</item>
+        <item>Shubra El-Kheima</item>
+        <item>Port Said</item>-->
+
+    </string-array>
+
+    <string-array name="all_areas">
+        <!--<item>Choose an Area</item>-->
+        <!--<item>Abbassia</item>
+        <item>NCitySpinnerCity</item>
+        <item>New Cairo</item>
+        <item>Heliopolis</item>-->
+    </string-array>
+
+    <string name="doctor_name">دكتور محمد</string>
+    <string name="doctor_job">أستاذ الأمراض الجلدية</string>
+    <string name="category">الفئة</string>
+    <string name="reviews">100 ملاحظات</string>
+
+    <string name="discount">خصم</string>
+    <integer name="rate">0</integer>
+
+    <string name="discount_percentage">50%</string>
+
+    <string name="doctor_specialist">طبيب أسنان متخصص طب الأسنان</string>
+
+    <string name="doctor_location">مدينة نصر: 42 شارع البطراوى.</string>
+
+    <string name="doctor_fees_discount">رسوم الخصم: 50 ج.م.</string>
+
+    <string name="doctor_phone">هاتف: 01028203313</string>
+
+    <string name="doctor_profile">بيانات طبيبك</string>
+
+    <string name="doctor_schedule">3:00-4:30</string>
+
+    <string name="doctor_service">خدمة</string>
+
+    <string name="profile">الملف الشخصي</string>
+    <string name="review">التعليقات</string>
+
+    <string name="doctor_about">
+        Our Professional <!--dental team will provide you with the best treatment option using the highest technology
+        in a relaxed and friendly atmosphere. Specialists and Consultants-->
+    </string>
+
+    <string name="doctor_service1">جراحة الأسنان</string>
+
+    <string name="doctor_service2">تبييض الأسنان</string>
+
+    <string name="add_review">إضافة مراجعة</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_recycler_view">بحث عن طبيب</string>
+    <string name="title_activity_doctor_profile">بيانات طبيبك</string>
+    <string name="title_activity_login_name">تسجيل الدخول</string>
+    <string name="title_activity_register">تسجيل حساب</string>
+    <string name="title_activity_contact_us">اتصل بنا</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_code">رمز</string>
+    <string name="prompt_email">البريد الإلكتروني</string>
+    <string name="prompt_password">كلمه السر</string>
+    <string name="action_sign_in">تسجيل الدخول</string>
+    <string name="action_sign_up">تسجيل حساب</string>
+    <string name="action_sign_in_short">تسجيل الدخول</string>
+    <string name="error_invalid_email">عنوان البريد الإلكتروني غير صالح</string>
+    <string name="error_invalid_phone">هذا الهاتف غير صحيح</string>
+    <string name="error_invalid_address">هذا العنوان غير صحيح</string>
+    <string name="error_invalid_password">كلمة المرور قصيرة جدا</string>
+    <string name="error_incorrect_password">كلمة المرور غير صحيحة</string>
+    <string name="error_field_required">هذه الخانة مطلوبه</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_about_me">عن البطاقة طبية</string>
+    <string name="title_activity_buy_card">شراء بطاقة</string>
+    <string name="title_activity_suggest_doctor">اقتراح الفئة</string>
+
+    <string name="about_us">معلومات عنا</string>
+    <string name="about_us_data">نحن متخصصون في علاج أمراض القلب والعلاج الطبيعي والعلاج الطبيعي.
+         (فيسيوثيرابيست) - العلاج الطبيعي (العلاج الطبيعي) - العلاج الطبيعي - العلاج الطبيعي - العلاج الطبيعي - العلاج الطبيعي - العلاج الطبيعي - العلاج الطبيعي -
+         إنجليش إنجليش أرتيكل ميتنيفرزيس وييث a ميديكال ميديكال سسينس أند إنفورماتيونال تيشنولوغي.
+    معلومات عنا
+    </string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="todo">TODO</string>
+    <string name="search_for_doctor">بحث عن طبيب</string>
+
+    <string-array name="comments">
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+        <item>Excellent</item>
+    </string-array>
+
+    <string-array name="account_name">
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+    </string-array>
+
+    <string-array name="travel_reasons">
+        <item>Dahab</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+        <item>Muhammad</item>
+    </string-array>
+    <string name="prompt">prompt</string>
+
+    <string name="fcm_pref">com.example.hyperdesignhussien.myawesomepushnotification.fcm_pref</string>
+    <string name="fcm_token">com.example.hyperdesignhussien.myawesomepushnotification.fcm_token</string>
+    <string name="token">token</string>
+
+    <string name="change_language">تغير اللغة</string>
+    <string name="English">انجليزي</string>
+    <string name="Arabic">عربى</string>
+
+    <string name="buy_card">شراء بطاقة</string>
+    <string name="suggest">اقترح</string>
+    <string name="blog_name">مدونة</string>
+    <string name="blog_details_title">Blog Details</string>
+    <string name="settings_name">إعدادات</string>
+
+    <string name="blog_title">Blog Title</string>
+    <string name="blog_written_by">Written By Muhammad</string>
+    <string name="blog_date">1/2/2018</string>
+    <string name="blog_details">Details of Blog</string>
+
+    <string name="register">تسجيل حساب</string>
+    <string name="register_username">اسم المستخدم</string>
+    <string name="register_email">البريد الإلكتروني</string>
+    <string name="register_password">كلمه السر</string>
+    <string name="register_code_number">رقم الكود</string>
+
+    <string name="buy_card_name">اسم</string>
+    <string name="buy_card_email_address">البريد الإلكتروني</string>
+    <string name="buy_card_phone">رقم الهاتف</string>
+    <string name="buy_card_address">عنوان</string>
+    <string name="buy_card_comment">تعليق</string>
+    <string name="buy_card_button">شراء بطاقة</string>
+
+    <string name="suggest_name">اسم</string>
+    <string name="suggest_phone">رقم الهاتف</string>
+    <string name="suggest_address">عنوان</string>
+
+    <string name="medical_card_account_name">بطاقة طبية</string>
+    <string name="medical_card_account_email">info@medicalcard-eg.com</string>
+
+    <string name="contact_me_username">اسم المستخدم</string>
+    <string name="contact_me_email">البريد الإلكتروني</string>
+    <string name="contact_me_phone">رقم الهاتف</string>
+    <string name="contact_me_title">عنوان الرسالة</string>
+    <string name="contact_me_message">رسالة</string>
+    <string name="contact_me_button">اتصل بي</string>
+
+    <string name="communicate">تواصل</string>
+
+    <string name="alert_message">يرجى التحقق من اتصال الشبكة وإعادة المحاولة</string>
+    <string name="exit_message">خروج</string>
+
+    <string name="ok_message">موافق</string>
+    <string name="cancel_message">إلغاء</string>
+    <string name="close_message">اغلاق</string>
+
+    <string name="category_required">اختيار القسم مطلوب</string>
+    <!--<string name="carTypeNew" />
+    <string name="carTypeUsed" />-->
+    <string name="typeOfMemberShip">نوع العضوية</string>
+    <string name="single">فرد</string>
+    <string name="family">أسرة</string>
+
+</resources>

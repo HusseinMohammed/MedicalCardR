@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hyper.design.medicalcard.Activities.Register">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:minHeight="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:id="@+id/toolbar"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+    <!-- Register progress -->
+    <ProgressBar
+        android:id="@+id/register_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!--<ScrollView
+        android:id="@+id/register_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:id="@+id/register_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/doctor_items_margin_top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLogin"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:srcCompat="@drawable/medical_card_logo" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorGreen"
+                android:hint="@string/register_username"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spin_all_cities_register"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/colorGreen"
+                    android:pointerIcon="arrow"
+                    android:spinnerMode="dropdown" />
+
+
+                <Spinner
+                    android:id="@+id/spin_all_areas_register"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/colorGreen"
+                    android:pointerIcon="arrow"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/ac_tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorGreen"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+            <!--<EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/register_email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/colorGreen"/>-->
+
+            <!--<AutoCompleteTextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />-->
+
+
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorGreen"
+                android:hint="@string/prompt_password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <!--<EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/register_password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/colorGreen"/>-->
+
+            <EditText
+                android:id="@+id/etCodeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorGreen"
+                android:hint="@string/register_code_number"
+                android:inputType="number" />
+
+            <!--<EditText-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:ems="10"-->
+            <!--android:inputType="phone"-->
+            <!--android:id="@+id/etPhone"-->
+            <!--android:hint="Phone Number" />-->
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorGreen"
+                android:hint="@string/register"
+                android:textColor="@color/colorGreen"
+                android:textColorHint="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    <!--</ScrollView>-->
+
+</LinearLayout>

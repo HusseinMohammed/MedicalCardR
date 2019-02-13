@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hyper.design.medicalcard"
+    android:versionCode="6"
+    android:versionName="1.4"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".checkNetwork.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/medical_card_icon"
+        android:label="@string/app_name_name"
+        android:roundIcon="@mipmap/medical_card_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Activities.HeartBeatSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".checkNetwork.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <service android:name=".PushNotification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".PushNotification.MyFirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activities.RecyclerViewOfDoctors"
+            android:configChanges="locale"
+            android:label="@string/title_activity_recycler_view"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.DoctorProfile"
+            android:configChanges="locale"
+            android:label="@string/title_activity_doctor_profile"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_login_name"
+            android:screenOrientation="portrait" >
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".Activities.Register"
+            android:configChanges="locale"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.ContactUs"
+            android:configChanges="locale"
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.AboutMe"
+            android:configChanges="locale"
+            android:label="@string/title_activity_about_me"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.BuyCard"
+            android:configChanges="locale"
+            android:label="@string/buy_card"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.SuggestDoctor"
+            android:configChanges="locale"
+            android:label="@string/suggest"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.DoctorProfileSuccess"
+            android:configChanges="locale"
+            android:label="@string/title_activity_doctor_profile"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.BlogActivity"
+            android:configChanges="locale"
+            android:label="@string/blog_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.BlogDetails"
+            android:configChanges="locale"
+            android:label="@string/blog_details_title"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.SpinnerCountryActivity"
+            android:configChanges="locale"
+            android:label="@string/settings_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.Settings"
+            android:configChanges="locale"
+            android:label="@string/settings_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.AndroidLocalize"
+            android:configChanges="locale"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+    </application>
+
+</manifest>
